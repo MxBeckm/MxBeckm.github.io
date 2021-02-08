@@ -1,9 +1,9 @@
+<app-header id="app-header"></app-header>
 <body id="body">
   <main id="main"> 
     <div id="globeGL">
-      <app-globe-gl ></app-globe-gl>
+      <app-globe-gl class="app-globe-gl" (window:resize)="onResize($event)" #appSetGlobeStyle></app-globe-gl>
     </div>
-    
     <div id="center">
       <p id="name-font" class="center">Max Beckmann</p>
       <p class="center">Im a Msc Student of applied Geoinformatics and im in love with creating things.</p>

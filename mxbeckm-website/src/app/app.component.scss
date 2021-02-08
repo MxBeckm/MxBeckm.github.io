@@ -1,16 +1,22 @@
 #name-font{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    font-size: 70px;
+    
 }
 #body{
     position: relative;
     text-align: center;
     display: flex;
+    box-sizing: border-box;
+    max-width: 1280px;
+    margin-top: 5vh;
 }
 .center{
-    margin: auto;
-    width: 50%;
+    background-color: aqua;
+    margin: 0mm;
+    width: fit-content;
 }
 #main{
     width: 100%;
@@ -18,14 +24,20 @@
 }
 #center{
     margin: auto;
-    width: 50%;
+    width: 60%;
     border: 3px solid green;
     
 }
 #globeGL{
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: -100;
-    width: 900px;
+    
+}
+#app-header{
+    z-index: 50;
+    display: flex;
+    box-sizing: border-box;
+
 }

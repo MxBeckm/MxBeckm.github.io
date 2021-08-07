@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { GlobeGlComponent } from './globe-gl/globe-gl.component';
 import { HeaderComponent } from './header/header.component';
 import { SetGlobeStyleDirective } from './globe-gl/set-globe-style.directive';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SetGlobeStyleDirective } from './globe-gl/set-globe-style.directive';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [GlobeGlComponent],
   bootstrap: [AppComponent]

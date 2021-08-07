@@ -8,17 +8,21 @@ import { HeaderComponent } from './header/header.component';
 import { SetGlobeStyleDirective } from './globe-gl/set-globe-style.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// import { MatButton} from '@angular/material/button'
+
 @NgModule({
   declarations: [
     AppComponent,
     GlobeGlComponent,
     HeaderComponent,
-    SetGlobeStyleDirective
+    SetGlobeStyleDirective,
+    // MatButton
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+   
   ],
   providers: [GlobeGlComponent],
   bootstrap: [AppComponent]

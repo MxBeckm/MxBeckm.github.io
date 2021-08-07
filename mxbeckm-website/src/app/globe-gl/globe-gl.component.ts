@@ -4,7 +4,7 @@ import Globe from 'globe.gl';
 
 @Component({
   selector: 'app-globe-gl',
-  template: '<div #myname (window:resize)="onResize($event)"></div>',
+  template: '<div id="globe-content"#myname (window:resize)="onResize($event)"></div>',
   styleUrls: ['./globe-gl.component.scss']
 })
 
@@ -43,8 +43,8 @@ export class GlobeGlComponent implements OnInit {
   }
   
   onResize($event){
-    console.log(this.div.nativeElement.firstChild.firstChild.firstChild.lastChild);
-    console.log(this.div);
+    // console.log(this.div.nativeElement.firstChild.firstChild.firstChild.lastChild);
+    // console.log(this.div);
     if (window.innerWidth < 600){
       this.renderer.setStyle(this.div.nativeElement.firstChild.firstChild.firstChild.lastChild,'width',window.innerWidth.toLocaleString()+"px");
       this.renderer.setStyle(this.div.nativeElement.firstChild.firstChild.firstChild.lastChild,'height',window.innerWidth.toLocaleString()+"px");

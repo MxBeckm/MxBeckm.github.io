@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GlobeGlComponent } from './globe-gl/globe-gl.component';
 import { HeaderComponent } from './header/header.component';
-import { SetGlobeStyleDirective } from './set-globe-style.directive';
+import { SetGlobeStyleDirective } from './globe-gl/set-globe-style.directive';
 
 @NgModule({
   declarations: [

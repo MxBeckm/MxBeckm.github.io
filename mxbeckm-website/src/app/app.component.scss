@@ -6,8 +6,28 @@ $header_margin: calc(8px + 20.5625vw);
     // position: relative;
     // display: flex;
     // justify-content: left;
-    font-size: 70px;
+    // font-size: 70px;
+    font-size: 64px !important;
+    line-height: 68px !important;
 }
+#sub-text{
+    // position: relative;
+    // display: flex;
+    // justify-content: left;
+    // font-size: 70px;
+    font-size: 34px !important;
+    line-height: 38px !important;
+}
+
+
+.text-gradient-mint-blue-dark {
+    background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+}
+
 #body{
     // position: relative;
     text-align: center;
@@ -15,6 +35,7 @@ $header_margin: calc(8px + 20.5625vw);
     box-sizing: border-box;
     margin-top: 5vh;
     left: 50%;
+    
 }
 .center{
     background-color: rgba(255, 255, 255, 0);
@@ -24,6 +45,7 @@ $header_margin: calc(8px + 20.5625vw);
 #main{
     width: 100%;
     height: 100%;
+    
 }
 #center{
     margin: auto;

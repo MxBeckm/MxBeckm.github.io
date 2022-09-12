@@ -1,4 +1,6 @@
 $globeside: calc(50% - 300px);
+$header_margin: calc(8px + 20.5625vw);
+
 
 #name-font{
     // position: relative;
@@ -39,9 +41,52 @@ $globeside: calc(50% - 300px);
     transform: translate(-50%, -50%);
     
 }
+
 #app-header{
     z-index: 50;
     display: flex;
     box-sizing: border-box;
     left: 50%;
+    // margin-left: $header_margin;
+    // margin-right: $header_margin;
+}
+
+@media (min-width: 1012px){
+.p-responsive {
+    padding-right: 20em !important;
+    padding-left: 20em !important;
+}}
+@media (min-width: 544px){
+.p-responsive {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}}
+.p-responsive {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}
+.height-full {
+    height: 100% !important;
+}
+.position-relative {
+    position: relative !important;
+}
+@media (min-width: 1012px){
+.flex-lg-row {
+    flex-direction: row !important;
+}}
+.flex-items-center {
+    align-items: center !important;
+}
+.flex-column {
+    flex-direction: column !important;
+}
+.container-xl {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div {
+    display: block;
 }

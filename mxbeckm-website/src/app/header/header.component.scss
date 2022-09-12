@@ -1,6 +1,12 @@
+$margin-sides: calc(8px + 1.5625vw);
+
 #sticky-header{
     z-index: 50;
     margin-top: 10vh;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: $margin-sides;
+    margin-right: $margin-sides;
     
 }
 #sticky-header button{

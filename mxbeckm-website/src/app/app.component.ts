@@ -17,7 +17,7 @@ export class AppComponent {
 
   title = 'mxbeckm-website';
   onResize(event) {
-    console.log(this.elmRef.nativeElement);
+    // console.log(this.elmRef.nativeElement);
     // this.renderer.setStyle(this.elmRef.nativeElement,'background','pink');
   }
 }

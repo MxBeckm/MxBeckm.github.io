@@ -38,6 +38,7 @@ export class GlobeGlComponent implements OnInit {
       .globeImageUrl('../../assets/img/earth-at-night.jpg')
       .pointsData(points)
       .backgroundImageUrl('../../assets/img/transparent.png')
+      .showAtmosphere(false)
       .width(600)
       .height(600);
   }

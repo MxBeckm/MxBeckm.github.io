@@ -1,9 +1,45 @@
 <app-header id="app-header" class="p-responsive"></app-header>
+
+<div class="container">
+  <mat-card>
+    <div class="toggle">
+      <mat-slide-toggle [(ngModel)]="isChecked" (change)="changed($event)">
+        <mat-icon>{{ mode }}</mat-icon>
+      </mat-slide-toggle>
+    </div>
+    <mat-card-title> Manage your freelancer business with us! </mat-card-title>
+    <mat-card-subtitle>
+      Takes less than 10 min to fill out all the information needed to register
+      your business
+    </mat-card-subtitle>
+    <form>
+      <mat-form-field>
+        <input matInput placeholder="Email" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Full name" />
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="password" placeholder="Password" />
+      </mat-form-field>
+      <button mat-raised-button color="primary">Get Started</button>
+    </form>
+    <mat-card-subtitle>
+      By signing up you are aggreed to our
+      <strong style="letter-spacing: 1px">Terms and conditions</strong>
+    </mat-card-subtitle>
+  </mat-card>
+</div>
+
 <body id="body">
-  <main id="main"> 
+  <main id="main">
     <div id="center" class="center">
-      <h2 id="name-font" class="text-gradient-mint-blue-dark" >Max Beckmann</h2>
-      <h4 id="sub-text" class="text-gradient-mint-blue-dark">Im a Msc Student of applied Geoinformatics and im in love with creating things.</h4>
+      <h2 id="sub-text" class="text-gradient-mint-blue-dark">Hello! My name is</h2>
+      <h2 id="name-font" class="text-gradient-mint-blue-dark">Max Beckmann</h2>
+      <!-- infinite loop -->
+      <ngx-typed-js [strings]="['Geovisualisation', 'Geoinformatics','Deeplearning','Datascience']" [loop]="true" [cursorChar]="'_'">
+        <h2 id="sub-text" class="text-gradient-mint-blue-dark">And I do <span class="typing"></span></h2>
+      </ngx-typed-js>
     </div>
     <div id="globeGL">
       <app-globe-gl class="app-globe-gl" (window:resize)="onResize($event)" #appSetGlobeStyle></app-globe-gl>

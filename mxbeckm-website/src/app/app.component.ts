@@ -20,8 +20,13 @@ export class AppComponent {
     // console.log(this.elmRef.nativeElement);
     // this.renderer.setStyle(this.elmRef.nativeElement,'background','pink');
   }
-  changed(event: MatSlideToggleChange): void {
-    this.mode = event.checked ? 'nightlight_round' : 'light_mode';
+  changed(): void {
+    if (this.isChecked = false) {
+      this.isChecked = true
+    } else {
+      this.isChecked = false
+    }
+    this.mode = this.isChecked ? 'nightlight_round' : 'light_mode';
     document.body.classList.toggle('darkMode');
   }
 }

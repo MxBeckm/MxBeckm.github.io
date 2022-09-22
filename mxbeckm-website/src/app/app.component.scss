@@ -1,6 +1,10 @@
 $globeside: calc(50% - 300px);
 $header_margin: calc(8px + 20.5625vw);
 
+#theme-switcher{
+    cursor: pointer;
+    margin-top: 4px;
+}
 
 #name-font{
     // position: relative;
@@ -67,8 +71,10 @@ $header_margin: calc(8px + 20.5625vw);
 #app-header{
     z-index: 50;
     display: flex;
+    justify-content: center;
+    align-self: center;
     box-sizing: border-box;
-    left: 50%;
+    
     // margin-left: $header_margin;
     // margin-right: $header_margin;
 }
